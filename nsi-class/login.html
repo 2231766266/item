@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录-新学说国际教育研究院</title>
+    <link rel="shortcut icon" href="./images/favorite.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_562159_oz807u6drlgfd2t9.css">
+    <link rel="stylesheet" href="./css/verify/verify.css">
+    <link rel="stylesheet" href="./layer/theme/default/layer.css">
+    <link rel="stylesheet" href="./css/common.css?v=04241613">
+    <link rel="stylesheet" href="./css/login.css?v=04171636">
+</head>
+
+<body>
+    <div class="container-fluid noPlPr ">
+        <!-- 顶部 -->
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-6">
+                        <a href="./index.html" class="logo"><img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-class/logo000.png" alt=""></a>
+                        <!-- <div class="logoDesc">
+                            <p>新学说课堂</p>
+                            <p>NSI CLASS</p>
+                        </div> -->
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-md-offset-6">
+                        <p class="welcome">您好，欢迎光临新学说国际教育研究院！<a href="./login.html">请登录</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 顶部END -->
+        <!-- wrap -->
+        <div class="wrap ptb50lr15">
+            <div class="container wrap-container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 text-center pt40 imgContainer">
+                        <img src="http://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-class/loginWrap.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="loginBox" id="loginBox">
+                            <p class="error_tips" id="error_tips"><span class="iconfont icon-icon tips"></span><span id="tipsTxt" class="tipsTxt"></span></p>
+                            <h4 class="clearfix mb5">学员登录 <a href="javascript:;" class="fr" id="registerNewAccount">注册新账号</a></h4>
+                            <form action="">
+                                <div class="form_item">
+                                    <label class="inputlogo iconfont icon-yonghutouxiang" for="username"></label>
+                                    <input type="text" placeholder="邮箱账号" id="username" class="username" name="email">
+                                </div>
+                                <div class="form_item">
+                                    <label class="inputlogo iconfont icon-mima" for="username"></label>
+                                    <input type="password" placeholder="密码" id="password" class="password">
+                                </div>
+                                <div id="mpanel" class="mpanel mpanel1 mb10">
+                                </div>
+                                <p class="text-right forget">(如您在四库全书注册过，可直接登录)</p>
+                                <p class="text-right forget"><a href="./forget.html" target="_blank">忘记密码?</a></p>
+                                <button type="button" id="loginButton" class="loginButton">登 录</button>
+                            </form>
+                        </div>
+                        <div class="loginBox registerBox" id="registerBox">
+                            <p class="error_tips" id="registerError"><span class="iconfont icon-icon tips"></span><span class="tipsTxt" id="registerTips"></span></p>
+                            <h4 class="clearfix mb5">新学员注册 <a href="javascript:;" class="fr" id="login">去登录</a></h4>
+                            <form action="">
+                                <div class="form_item">
+                                    <label class="inputlogo iconfont icon-tubiao209" for="registerEmail"></label>
+                                    <input type="text" placeholder="邮箱账号(推荐：163，qq等邮箱注册)" id="registerEmail" class="username">
+                                </div>
+                                <div class="form_item">
+                                    <label class="inputlogo iconfont icon-idcard" for="registerName"></label>
+                                    <input type="text" placeholder="姓名" id="registerName" class="inputStyle">
+                                </div>
+                                <div class="form_item">
+                                    <label class="inputlogo iconfont icon-zuzhijigou" for="registerInstution"></label>
+                                    <input type="text" placeholder="所属机构" id="registerInstution" class="inputStyle">
+                                </div>
+                                <div class="form_item">
+                                    <label class="inputlogo iconfont icon-suoshuzhiwei" for="registerJob"></label>
+                                    <input type="text" placeholder="职位" id="registerJob" class="inputStyle">
+                                </div>
+                                <div class="form_item">
+                                    <label class="inputlogo iconfont icon-shouji" for="registerPhone"></label>
+                                    <input type="text" placeholder="手机号码" id="registerPhone" class="inputStyle">
+                                </div>
+                                <div class="form_item">
+                                    <label class="inputlogo iconfont icon-mima" for="registerPassword"></label>
+                                    <input type="password" placeholder="密码" id="registerPassword" class="inputStyle">
+                                </div>
+                                <div class="form_item">
+                                    <label class="inputlogo iconfont icon-mima" for="registerConfirmPassword"></label>
+                                    <input type="password" placeholder="确认密码" id="registerConfirmPassword" class="inputStyle">
+                                </div>
+                                <div id="mpanel1" class="mpanel1 mb10">
+                                </div>
+                                <p class="mb10 rules">
+                                    点击“立即注册”，即表示您同意并愿意遵守新学说<a href="./about.html?about=rules" class="rules-detail">《用户协议》</a>
+                                </p>
+                                <button type="button" id="registerLoginButton" class="loginButton">立即注册</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- wrap END-->
+        <!-- footer -->
+        <div class="bgfff">
+            <div class="container footer text-center">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-link">
+                            <a href="./about.html">关于我们</a>
+                            <a href="./about.html?about=rules">用户协议</a>
+                            <a href="./about.html?about=connect">联系我们</a>
+                            <a href="./about.html?about=feedback">意见反馈</a>
+                        </div>
+                        <p class="footer-copyright">©&nbsp;2018&nbsp;xinxueshuo.cn&nbsp;京ICP备&nbsp;16031987号-1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer END-->
+    </div>
+</body>
+
+</html>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="./js/config.js"></script>
+<script src="./js/jquery.cookie.js"></script>
+<script src="./layer/layer.js"></script>
+<script src="./js/login.js?v=03130956"></script>
+<script src="./js/verify/verify.min.js"></script>

@@ -1,0 +1,232 @@
+body {
+    background-image: -webkit-linear-gradient(to bottom, #f7e8df, #c8edf9);
+    background-image: linear-gradient(to bottom, #f7e8df, #c8edf9)
+}
+
+th,
+td {
+    white-space: nowrap;
+    min-width: 105px;
+}
+
+tr {
+    transition: all .3s;
+}
+
+tr:hover {
+    background: rgb(255, 230, 207);
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.content {
+    padding: 40px 15px;
+    position: relative;
+}
+
+.activityBox {
+    position: fixed;
+    z-index: 999;
+}
+
+.activityList,
+.activityDesc {
+    border-radius: 4px;
+    overflow: hidden;
+    background: #FFF;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.activityList {
+    box-shadow: 0 0 10px #333;
+}
+
+.title {
+    background-color: #FF8533;
+    color: #FFF;
+    margin: 0;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 20px;
+    font-size: 16px;
+    position: relative;
+}
+
+.addNewActive {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 10px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.addNewActive:link {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.addNewActive:visited {
+    color: #FFF;
+}
+
+.addNewActive:hover {
+    text-decoration: none;
+    color: rgb(185, 182, 182)
+}
+
+.titleLogo {
+    font-size: 26px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.logo01 {
+    margin-right: 5px;
+}
+
+.logo02 {
+    margin-left: 15px;
+    font-size: 29px;
+    vertical-align: middle;
+}
+
+.activityListDesc_container,
+.activityDesc_container {
+    background-color: #FFF;
+}
+
+.activityListDesc_container {
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+.activityListDesc_container li {
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all .3s;
+    font-weight: 700;
+}
+
+.active {
+    background: #FF8533;
+    color: #FFF;
+}
+
+.total {
+    font-weight: 700;
+    width: 100%;
+}
+
+
+/* .activityListDesc_container li:hover {
+    background: rgb(255, 230, 207);
+} */
+
+.activityListDesc_container li:first-of-type {
+    background: rgb(253, 185, 140);
+    color: #FFF;
+}
+
+.table-responsive {
+    padding: 0 0 10px;
+    overflow-x: scroll;
+    border: 10px solid #FFF;
+}
+
+.activityDesc_container {
+    margin-bottom: 0;
+    /* border-right: 2px solid #ccc; */
+}
+
+.hideList {
+    width: 20%;
+    height: 45px;
+    line-height: 65px;
+    background: #FF8533;
+    border-radius: 0 0 20px 20px;
+    position: fixed;
+    top: -23px;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: 0 0 10px #333;
+    color: #FFF;
+}
+
+.hideList>span {
+    color: #FFF;
+    margin-left: 18px;
+}
+
+.tohide {
+    right: 40px;
+    font-size: 20px;
+}
+
+.activityBox {
+    display: none;
+}
+
+.cloneTbody {
+    position: absolute;
+    top: 91px;
+    left: 25px;
+    background-color: #FFF;
+    box-shadow: 4px 0px 5px #ddd;
+}
+
+.cloneTitle {
+    position: absolute;
+    background-color: #FFF;
+    top: 55px;
+    left: 25px;
+    box-shadow: 4px 0px 5px #ddd;
+}
+
+.paid {
+    display: none;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: rgb(17, 185, 26);
+    font-size: 12px;
+    color: #FFF;
+    border-radius: 50%;
+    margin-left: 5px;
+    position: absolute;
+    right: 5px;
+    opacity: .8;
+}
+
+
+/* .cloneTitle>th {
+    width: 100% !important;
+} */
+
+@media(max-width:767px) {
+    .activityDesc {
+        margin-top: 10px;
+    }
+    .title {
+        padding-left: 5px;
+    }
+    .titleLogo {
+        margin-right: 3px;
+    }
+    .hideList {
+        width: 35%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1400px;
+    }
+}

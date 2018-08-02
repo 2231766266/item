@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新学说-活动展示</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_551799_u6pnyxcl7c26s9k9.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="./css/showClientWrite.css">
+</head>
+
+<body>
+    <div class="container-fluid content">
+        <!-- <div class="container"> -->
+        <div class="hideList text-center animated" id="hideList">活动列表<span class="iconfont icon-xiala1"></span></div>
+        <div class="row">
+            <div class="col-md-4 col-sm-4 mb15 activityBox animated" id="activityBox">
+                <div class="activityList">
+                    <h4 class="title"><span class="iconfont icon-liebiaodaohang_zixun titleLogo"></span>活动列表
+                        <a href="javascript:;" class="iconfont icon-chanpinliebiaoxiangshangshouqi addNewActive tohide" id="tohide" title="收起" target="_"></a>
+                        <a href="./index.html" class="iconfont icon-icon_add addNewActive" title="发起新的活动" target="_"></a>
+                    </h4>
+                    <div>
+                        <ul class="activityListDesc_container" id="activityListDesc_container"></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-xm-12">
+                <div class="activityDesc">
+                    <h4 class="title">
+                        <span class="iconfont icon-shuxingliebiaoxiangqing titleLogo logo01"></span>活动详情
+                        <span class="iconfont icon-ai62 logo02"></span><i class="total"></i>人
+                    </h4>
+                    <div class="table-responsive scroll_x">
+                        <table class="activityDesc_container table table-bordered">
+                            <thead>
+                                <tr id="activeTitle" class="activityTitle"></tr>
+                                <tr id="cloneTitle" class="cloneTitle"></tr>
+                            </thead>
+                            <tbody id="activeContent"></tbody>
+                            <tbody id="cloneTbody" class="cloneTbody"></tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+</body>
+
+</html>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="./js/config.js"></script>
+<script src="./js/showClientWrite.js"></script>

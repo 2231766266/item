@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="keywords" content="新学说,新学说国际教育研究院,新学说在线教育,新学说在线课堂">
+    <meta name="description" content="新学说国际教育研究院，努力为中国国际学校行业培养各类人才。新学说在线课堂，为国际学校各职能部门中基层管理人员提供相关岗位技能培训，国际教育研究院还包括针对国际学校校长的领导力培养的“PISOM国际学校校长研修班”，致力于为中国国际学校行业输送更多优质人才。">
+    <title>新学说国际教育研究院-在线课堂</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="./images/favorite.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://cdn.bootcss.com/Swiper/4.1.6/css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_554630_3hucyqvpg4hiwwmi.css">
+    <link rel="stylesheet" href="./layer/theme/default/layer.css">
+    <link rel="stylesheet" href="./css/common.css?v=04241613">
+    <link rel="stylesheet" href="./css/nav.css?v=04241613">
+    <link rel="stylesheet" href="./css/index.css?v=04241613">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <span id="nsiClass-Index"></span>
+    <!-- 顶部 -->
+    <header class="navbar navbar-default navbar-demo navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="./index.html" class="navbar-brand">
+                    <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-class/logo000.png" alt="">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="" id="living">正在直播</a></li>
+                    <li><a href="./classCenter.html">课程中心</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hotphone"><a href="javascript:;"><span class="iconfont icon-dianhua hottel"></span>热线电话：010-52468286</a></li>
+                    <li><a href="./login.html"><span class="iconfont icon-gerenzhongxin navicon"></span><span id="login">登录 / 注册</span></a></li>
+                    <li><a href="./personalCenter.html" id="personalClass" class="personalClass">个人中心</a></li>
+                    <li><a href="javascript:;" id="exit" class="exit">退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 顶部END -->
+
+    <div class="bgfff pt66">
+        <!-- banner -->
+        <div class="banner">
+            <div class="swiper-container banner-view">
+                <div class="swiper-wrapper">
+                    <!-- <div class="swiper-slide"><img src="http://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-class/banner01.jpg" alt=""></div> -->
+                    <div class="swiper-slide"><img src="http://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-class/banner02.jpg" alt=""></div>
+                    <!-- <div class="swiper-slide"><img src="./images/banner.jpg" alt=""></div> -->
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+
+                <!-- 如果需要导航按钮 -->
+                <!-- <div class="swiper-button-prev swiper-button-white"></div>
+                <div class="swiper-button-next swiper-button-white"></div> -->
+            </div>
+        </div>
+        <!-- bannerEND -->
+
+        <!--playVideo-->
+        <div class="container ptb30lr15">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="playVideo borderRadio4">
+                        <img src="http://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-class/playVideo.jpg" alt="" class="playImg">
+                        <div id="playVideo_title" class="playVideo_title oneline"></div>
+                        <a class="enterPlay" id="enterVideo"><span class="iconfont icon-iconbofang"></span></a>
+                        <p class="playVideo_desc">本节课堂时间 ：<span id="classTime"></span>&nbsp;&nbsp;19:00-21:00</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="teacherDesc borderRadio4">
+                        <div class="teacherBox playVideoTeacherBox row">
+                            <div class="teacherHeadPortrait playVideoTeacherBox-teacherHeadPortrait col-md-12 col-sm-12 col-xs-4">
+                                <div class="teacherPic">
+                                    <img alt="" id="teacherImg">
+                                </div>
+                                <i class="champion animated wobble infinite"></i>
+                            </div>
+                            <h4 class="text-center mt20 textShadow col-md-12 col-sm-12 col-xs-8">讲师：<span class="teacherName" id="teacherName"></span></h4>
+                            <p class="teacherContent  mt20  multiline multiline3 col-md-12 col-sm-12 textShadow playVideoTeacherBox-teacherContent">主讲课程：<span class="majorCourse" id="majorCourse"></span></p>
+                            <p class="teacherContent  mt20  multiline multiline6 textShadow col-md-12 col-sm-12 col-xs-8 toChangeMultiline"><span class="teacherNow" id="teacherNow"></span></p>
+                        </div>
+                        <div class="bg-wrap">
+                            <div class="circle-bg-top"></div>
+                            <div class="oval-bg"></div>
+                            <div class="diamond-bg-bottom"></div>
+                            <div class="triangle-bg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--playVideo_END-->
+
+    <!-- CourseList -->
+    <div class="bg000">
+        <div class="container ptb50lr15">
+            <div class="title_Box">
+                <h3 class="text-center letterspacing1 types-title">国际学校HR管理课程</h3>
+                <h3 class="text-center mb50 letterspacing1"><small>一站式解决国际化学校运营各层面人才职业培训和能力提升</small></h3>
+            </div>
+            <div class="row" id="CourseContainer"></div>
+        </div>
+    </div>
+    <div class="bgfff">
+        <div class="container ptb50lr15">
+            <div class="title_Box">
+                <h3 class="text-center letterspacing1 types-title classStatus">国际学校市场招生课程<span class="classStatus-prepare">备课中</span></h3>
+                <h3 class="text-center mb50 letterspacing1"><small>一站式解决国际化学校招生各层面人才职业培训和能力提升</small></h3>
+            </div>
+            <div class="row mb30">
+                <div class="col-md-3 col-sm-6">
+                    <div class="CourseContainer">
+                        <a href="javascript:;" target="_">
+                            <div class="Course Course-up">
+                                <img src="./images/CourseImage13.jpg" alt="">
+                                <!-- <div class="Couse_title">
+                                        <span class="Couse_subject">人力资源</span>
+                                        <span class="Couse_subject">管理</span>
+                                    </div> -->
+                            </div>
+                            <div class="Course Course-mid"><img src="./images/CourseImage13.jpg" alt=""></div>
+                            <div class="Course Course-down"><img src="./images/CourseImage13.jpg" alt=""></div>
+                        </a>
+                        <div class="CourseInfo">
+                            <p class="mtb5  oneline"><span class="CourseName">国际学校市场的现状和态势</span></p>
+                            <p class="mtb5 twoline"><span class="CourseDesc" title="分析招生的基本形势和发展趋势，掌握有关招生的基本数据，并且，进行必要的统计分析，提出科学的论证报告">分析招生的基本形势和发展趋势，掌握有关招生的基本数据，并且，进行必要的统计分析，提出科学的论证报告</span></p>
+                            <p class="mtb5">开课时间：<span class="CourseTime">待定</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="CourseContainer">
+                        <a href="javascript:;" target="_">
+                            <div class="Course Course-up">
+                                <img src="./images/CourseImage11.jpg" alt="">
+                            </div>
+                            <div class="Course Course-mid"><img src="./images/CourseImage11.jpg" alt=""></div>
+                            <div class="Course Course-down"><img src="./images/CourseImage11.jpg" alt=""></div>
+                        </a>
+                        <div class="CourseInfo">
+                            <p class="mtb5  oneline"><span class="CourseName">招生市场策划</span></p>
+                            <p class="mtb5 twoline"><span class="CourseDesc" title="对招生市场进行分析和预测，从招生市场的空间中寻找到自己学校的坐标，找到招生的努力方向，为学校争取到尽量多的市场份额。">对招生市场进行分析和预测，从招生市场的空间中寻找到自己学校的坐标，找到招生的努力方向，为学校争取到尽量多的市场份额。</span></p>
+                            <p class="mtb5">开课时间：<span class="CourseTime">待定</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="CourseContainer">
+                        <a href="javascript:;" target="_">
+                            <div class="Course Course-up">
+                                <img src="./images/CourseImage09.jpg" alt="">
+                            </div>
+                            <div class="Course Course-mid"><img src="./images/CourseImage09.jpg" alt=""></div>
+                            <div class="Course Course-down"><img src="./images/CourseImage09.jpg" alt=""></div>
+                        </a>
+                        <div class="CourseInfo">
+                            <p class="mtb5  oneline"><span class="CourseName">招生形象策划</span></p>
+                            <p class="mtb5 twoline"><span class="CourseDesc" title="提升学校在市场竞争中的识别度，进而实施有效的信息传播。">提升学校在市场竞争中的识别度，进而实施有效的信息传播。</span></p>
+                            <p class="mtb5">开课时间：<span class="CourseTime">待定</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="CourseContainer">
+                        <a href="javascript:;" target="_">
+                            <div class="Course Course-up">
+                                <img src="./images/CourseImage10.jpg" alt="">
+                            </div>
+                            <div class="Course Course-mid"><img src="./images/CourseImage10.jpg" alt=""></div>
+                            <div class="Course Course-down"><img src="./images/CourseImage10.jpg" alt=""></div>
+                        </a>
+                        <div class="CourseInfo">
+                            <p class="mtb5  oneline"><span class="CourseName">招生公关策划</span></p>
+                            <p class="mtb5 twoline"><span class="CourseDesc" title="充分发挥公共关系在招生过程中的作用，精心构思设计各种类型的公关活动，高度重视交往传扬、沟通协调，排忧解难、畅导理解，信息传播、教育引导等各种公关渠道。">充分发挥公共关系在招生过程中的作用，精心构思设计各种类型的公关活动，高度重视交往传扬、沟通协调，排忧解难、畅导理解，信息传播、教育引导等各种公关渠道。</span></p>
+                            <p class="mtb5">开课时间：<span class="CourseTime">待定</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 讲师 -->
+    <div class="bgfff lecturerBg">
+        <div class="container ptb50lr15">
+            <h3 class="text-center letterspacing1 lecturerTitle">新学说精英讲师</h3>
+            <h3 class="text-center mb30 letterspacing1 lecturerTitle"><small>新学说国际教育研究院精英讲师助你一臂之力</small></h3>
+            <div class="row" id="teacherList"></div>
+        </div>
+    </div>
+    <!-- 讲师 END-->
+    <!-- CourseList END-->
+    <!-- footer -->
+    <div class="bgfff">
+        <div class="container footer">
+            <div class="row">
+                <div class="col-md-9 col-sm-9 col-xs-12">
+                    <div class="footer-link">
+                        <a href="./about.html">关于我们</a>
+                        <a href="./about.html?about=rules">用户协议</a>
+                        <a href="./about.html?about=connect">联系我们</a>
+                        <a href="./about.html?about=feedback">意见反馈</a>
+                    </div>
+                    <p class="footer-copyright">©&nbsp;2018&nbsp;xinxueshuo.cn&nbsp;京ICP备&nbsp;16031987号-1</p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12 text-center">
+                    <div class="theThreePartLink">
+                        <p class="text-center">
+                            <a href="javascript:;" class="weChat iconfont icon-unie655" title="微信">
+                                <i class="weChat-pic"></i>
+                            </a>
+                        </p>
+                        <p class="text-center weChat-desc">官方公众号</p>
+                    </div>
+                    <div class="theThreePartLink">
+                        <p class="text-center">
+                            <a href="javascript:;" class="weChat iconfont icon-gouwu" title="微店">
+                                <i class="weChat-pic shop"></i>
+                            </a>
+                        </p>
+                        <p class="text-center weChat-desc">官方微店</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer END-->
+    <!-- backtoTop -->
+    <div class="backtoTop animated" id="backtoTop">
+        <a href="javascript:;" class="toTop">
+            <span class="iconfont icon-icon3"></span>
+        </a>
+    </div>
+    <!-- backtoTop END-->
+</body>
+
+</html>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/Swiper/4.1.6/js/swiper.min.js"></script>
+<script src="./js/config.js"></script>
+<script src="./js/jquery.cookie.js"></script>
+<script src="./layer/layer.js"></script>
+<script src="./js/common.js?v=03212216"></script>
+<script src="./js/index.js?v=04171636"></script>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script src="./js/WechatShare.js"></script>
+<!-- 百度统计 -->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?39a5da71be8012c3d8b0ceccc0797443";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
